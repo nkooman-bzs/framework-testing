@@ -8,8 +8,14 @@ export default class MyDocument extends Document {
     const styleTags = sheet.getStyleElement()
 
     return (
-      <Html>
-        <Head>{styleTags}</Head>
+      <Html lang="en">
+        <Head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <title>Frontend Mentor | Sunnyside agency landing page</title>
+          {styleTags}
+        </Head>
         <body>
           <div className="root">{main}</div>
           <NextScript />
